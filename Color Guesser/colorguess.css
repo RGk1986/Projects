@@ -5,6 +5,7 @@ body {
     margin: 0;
   }
 
+
   #container {
     max-width: 600px;
     margin: 0 auto;
@@ -33,6 +34,7 @@ body {
   #color-display {
     display: block;
     font-size: 2em;
+    color: red green blue;
   }
 
   #stripe {
@@ -44,8 +46,8 @@ body {
 
   #message {
     text-transform: uppercase;
-    color: #e5d8d8;
-    font-size: 0.5 em;
+    color: #fb0000;
+    font-size: 2em;
     display: inline-block;
     width: 20%;
   }

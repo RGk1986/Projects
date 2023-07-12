@@ -20,17 +20,24 @@ function init() {
 resetButton.addEventListener("click", function () {reset();});
 
 function setupSquares() {
+
   for (let i = 0; i < squares.length; i++) {
+    // adding colors to the squares
     squares[i].style.backgroundColor = colors[i];
+
+    //add an event listener for when the user clicks to make their guess
     squares[i].addEventListener("click", function () {
+
+    //grabs the color of the picked square and compares it to the "winner"
+      
       let clickedColor = this.style.backgroundColor;
       if (clickedColor === pickedColor) {
-        messageDisplay.textContent = "Correct";
+        messageDisplay.innerHTML = "Correct";
         resetButton.textContent = "Play Again";
         changeColors(pickedColor);
       } else {
         this.style.backgroundColor = "#232323";
-        messageDisplay.textContent = "try again";
+        messageDisplay.innerHTML = "try again";
       }
     });
   }
@@ -90,8 +97,8 @@ function genRandomColors(num) {
 }
 
 function makeColor() {
-  let r = Math.floor(Math.random() * 256);
-  let g = Math.floor(Math.random() * 256);
-  let b = Math.floor(Math.random() * 256);
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
   return "rgb(" + r + ", " + g + ", " + b + ")";
 }
