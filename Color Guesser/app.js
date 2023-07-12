@@ -80,6 +80,7 @@ function chooseColor() {
   let random = Math.floor(Math.random() * colors.length);
   return colors[random];
 }
+
 function genRandomColors(num) {
   let arr = [];
   for (let i = 0; i < num; i++) {
@@ -87,6 +88,7 @@ function genRandomColors(num) {
   }
   return arr;
 }
+
 function makeColor() {
   let r = Math.floor(Math.random() * 256);
   let g = Math.floor(Math.random() * 256);
