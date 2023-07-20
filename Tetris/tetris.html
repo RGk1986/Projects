@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Coding the HTML to utilise my style.css and app.js -->
+
+<div class="canvas-container">
+    <canvas id="tetris" width="240" height="400"></canvas>
+</div>
+
+<div class="next-piece-container">
+    <canvas id="next-piece" width="80" height="80"></canvas>
+</div>
+
+<div class="score-container">
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="level">Level: <span id="level">0</span></div>
+</div>
+
+<div class="controls-container">
+    <div class="controls">
+        <div class="controls__left">
+            <button id="left">Left</button>
+        </div>
+        <div class="controls__right">
+            <button id="right">Right</button>
+        </div>
+        <div class="controls__down">
+            <button id="down">Down</button>
+        </div>
+        <div class="controls__rotate">
+            <button id="rotate">Rotate</button>
+        </div>
+    </div>
+
+    <div class="controls__pause">
+        <button id="pause">Pause</button>
+
+    </div>  
+</div>
+
+<div class="game-over-container">
+    <div class="game-over">
+        <h1>Game Over</h1>
+        <button id="restart">Restart</button>
+    </div>
+</div>
+
+<div class="start-container">
+    <div class="start">
+        <h1>Tetris</h1>
+        <button id="start">Start</button>
+    </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>

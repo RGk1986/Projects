@@ -1,0 +1,85 @@
+/* // Style my HTML  */
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    border: 1px solid #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 20px;
+}
+
+button {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: block;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #333;
+    border: 1px solid #666;
+    color: #666;
+    cursor: default;
+}
+
+button:disabled:hover {
+    background-color: #333;
+    color: #666;
+}
+
+button:disabled:focus {
+    outline: none;
+}
+
+/* Path: Tetris\js\index.js */
+/* // Create a canvas context */
+
+canvas {
+    border: 1px solid #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+    
